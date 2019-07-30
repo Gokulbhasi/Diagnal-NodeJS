@@ -1,0 +1,6 @@
+{
+  "name": "My express app for diagnalDB- Production",
+  "mail": {
+    "password": "app_password"
+  }
+}

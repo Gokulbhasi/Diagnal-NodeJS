@@ -1,0 +1,6 @@
+{
+  "name": "My express app for diagnalDB- Production",
+  "mail": {
+    "host": "prod-mail-server"
+  }
+}
