@@ -11,11 +11,12 @@ module.exports = function(app) {
   app.use(express.json());
   app.use(express.urlencoded({ extended: true }));
   app.use(express.static("public"));
+  app.use("/api/image/", home);
   app.use(logger);
   app.use(helmet());
   //api
   app.use("/api/search", search);
   app.use("/api/list", list);
-  app.use("/", home);
+
   app.use(error);
 };

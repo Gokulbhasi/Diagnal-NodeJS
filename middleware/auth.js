@@ -2,6 +2,7 @@ const jwt = require("jsonwebtoken");
 const config = require("config");
 
 const log = (req, res, next) => {
+  console.log(req.originalUrl[2]);
   const token = req.header("x-auth-token");
 
   res.setHeader("Access-Control-Allow-Origin", "*");
